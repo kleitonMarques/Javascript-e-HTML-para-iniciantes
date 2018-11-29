@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Funções</title>
+</head>
+<body>
+	<input type="text" placeholder="Informe o numero 1" id="numero1">
+	<input type="text" placeholder="Informe o numero 2" id="numero2">
+	<button onclick="minhaFuncao()" >Clique-me</button>
+
+	<script>
+		function minhaFuncao() {
+			var numero1 = parseInt(document.querySelector('#numero1').value);
+			var numero2 = parseInt(document.querySelector('#numero2').value);
+
+			var resultado = numero1 + numero2;
+
+			alert(resultado);
+		}
+	</script>
+</body>
+</html>

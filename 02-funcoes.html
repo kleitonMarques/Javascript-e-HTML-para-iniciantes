@@ -5,13 +5,20 @@
 	<title>Funções</title>
 </head>
 <body>
-	<input type="text" placeholder="Informe um texto" id="texto">
+	<input type="text" placeholder="Informe seu nome" id="nome" name="nome">
+	<input type="text" placeholder="Informe seu sobrenome" name="sobrenome">
 	<button onclick="minhaFuncao()" >Clique-me</button>
 
 	<script>
 		function minhaFuncao() {
-			var texto = document.querySelector('#texto').value;
-			alert(texto);
+			var nome = document.querySelector('#nome').value;
+			var sobrenome = document.querySelector("input[name='sobrenome']").value;
+			// Nas duas variaveis acima estou pegando de dois jeito, o primeiro pelo ID e o segundo pelo NAME.
+			
+			//alert("Seu nome é " + nome + " " + sobrenome);
+
+			alert(`Seu nome é ${nome} ${sobrenome}`);
+
 		}
 	</script>
 </body>
