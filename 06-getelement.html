@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>GetElement</title>
+</head>
+<body>
+	<input type="text" placeholder="Informe um texto" id="valor">
+	<button onclick="minhaFuncao()">Clique-me</button>
+	
+	<div id="resultado"></div>
+
+	<script>
+		function minhaFuncao() {
+			// var valor = document.querySelector('#valor').value;
+			var valor = document.getElementById('valor').value;
+
+			//document.querySelector('#resultado').innerHTML = valor;
+			document.getElementById('resultado').innerHTML = valor;
+		}
+	</script>
+</body>
+</html>

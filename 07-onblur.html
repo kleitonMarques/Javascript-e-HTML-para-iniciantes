@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>GetElement</title>
+</head>
+<body>
+	<input type="text" placeholder="Informe um texto" id="valor" onblur="minhaFuncao()">
+	
+	<div id="resultado"></div>
+
+	<script>
+		
+		document.getElementById('valor').focus();
+
+		function minhaFuncao() {
+			var valor = document.getElementById('valor').value;
+
+			if (valor){
+				document.getElementById('resultado').innerHTML = valor;
+			} else{
+				document.getElementById('resultado').innerHTML = "Campo vazio";
+			}
+
+			
+		}
+	</script>
+</body>
+</html>
