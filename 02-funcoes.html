@@ -5,11 +5,13 @@
 	<title>Funções</title>
 </head>
 <body>
+	<input type="text" placeholder="Informe um texto" id="texto">
 	<button onclick="minhaFuncao()" >Clique-me</button>
 
 	<script>
 		function minhaFuncao() {
-			alert('Atenção virus no seu computador');
+			var texto = document.querySelector('#texto').value;
+			alert(texto);
 		}
 	</script>
 </body>
