@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Remover Alert</title>
+</head>
+<body>
+	<input type="text" placeholder="Informe um texto" id="valor">
+	<button onclick="minhaFuncao()">Clique-me</button>
+	
+	<div id="resultado"></div>
+
+	<script>
+		function minhaFuncao() {
+			var valor = document.querySelector('#valor').value;
+			document.querySelector('#resultado').innerHTML = valor;
+		}
+	</script>
+</body>
+</html>
